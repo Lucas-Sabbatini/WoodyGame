@@ -23,10 +23,14 @@ public class BomberSprite extends BadnessBoxSprite {
 
         bomb = new Bomb(x, y);
 
-        String alienImg = "images/alien.png";
-        ImageIcon ii = new ImageIcon(alienImg);
-
-        setImage(ii.getImage());
+        String alienImg = "/images/alien.png";
+        java.net.URL imgURL = getClass().getResource(alienImg);
+        if (imgURL != null) {
+            ImageIcon ii = new ImageIcon(imgURL);
+            setImage(ii.getImage());
+        } else {
+            System.err.println("Couldn't find file: " + alienImg);
+        }
     }
 
 

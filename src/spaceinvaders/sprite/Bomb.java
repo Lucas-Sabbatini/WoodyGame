@@ -20,9 +20,14 @@ public class Bomb extends BadSprite {
         this.x = x;
         this.y = y;
 
-        String bombImg = "images/bomb.png";
-        ImageIcon ii = new ImageIcon(bombImg);
-        setImage(ii.getImage());
+        String bombImg = "/images/bomb.png";
+        java.net.URL imgURL = getClass().getResource(bombImg);
+        if (imgURL != null) {
+            ImageIcon ii = new ImageIcon(imgURL);
+            setImage(ii.getImage());
+        } else {
+            System.err.println("Couldn't find file: " + bombImg);
+        }
     }
 
     public void setDestroyed(boolean destroyed) {

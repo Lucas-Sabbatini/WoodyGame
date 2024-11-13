@@ -25,8 +25,8 @@ public class SpaceInvadersBoard extends AbstractBoard{
     private int deaths = 0;
 
 
-    private String explImg = "images/explosion.png";
-
+    private String explImg = "/images/explosion.png";
+    java.net.URL imgURL = getClass().getResource(explImg);
 
 
 
@@ -124,7 +124,7 @@ public class SpaceInvadersBoard extends AbstractBoard{
                             && shotY >= (alienY)
                             && shotY <= (alienY + Commons.ALIEN_HEIGHT)) {
 
-                        ImageIcon ii = new ImageIcon(explImg);
+                        ImageIcon ii = new ImageIcon(imgURL);
                         alien.setImage(ii.getImage());
                         alien.setDying(true);
                         deaths++;
@@ -229,7 +229,7 @@ public class SpaceInvadersBoard extends AbstractBoard{
                         && bombY >= (playerY)
                         && bombY <= (playerY + Commons.PLAYER_HEIGHT)) {
 
-                    ImageIcon ii = new ImageIcon(explImg);
+                    ImageIcon ii = new ImageIcon(imgURL);
                     players.get(0).setImage(ii.getImage());
                     players.get(0).setDying(true);
                     bomb.setDestroyed(true);

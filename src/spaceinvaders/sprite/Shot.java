@@ -17,9 +17,14 @@ public class Shot extends BadSprite {
 
     private void initShot(int x, int y) {
 
-        String shotImg = "images/shot.png";
-        ImageIcon ii = new ImageIcon(shotImg);
-        setImage(ii.getImage());
+        String shotImg = "/images/shot.png";
+        java.net.URL imgURL = getClass().getResource(shotImg);
+        if (imgURL != null) {
+            ImageIcon ii = new ImageIcon(imgURL);
+            setImage(ii.getImage());
+        } else {
+            System.err.println("Couldn't find file: " + shotImg);
+        }
 
         int H_SPACE = 6;
         setX(x + H_SPACE);
