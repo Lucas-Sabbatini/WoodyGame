@@ -14,13 +14,14 @@ import spriteframework.sprite.BadSprite;
 import spriteframework.sprite.Player;
 
 import spaceinvaders.sprite.*;
+import spriteframework.sprite.PlayerOnlyX;
 
-public class SpaceInvadersBoard extends AbstractBoard{  
+public class SpaceInvadersBoard extends AbstractBoard{
     //define sprites
     //private List<BadSprite> aliens;
-    private Shot shot;    
-    
-    // define global control vars   
+    private Shot shot;
+
+    // define global control vars
     private int direction = -1;
     private int deaths = 0;
 
@@ -39,7 +40,7 @@ public class SpaceInvadersBoard extends AbstractBoard{
             }
         }
     }
-    
+
     protected void createOtherSprites() {
         shot = new Shot();
     }
@@ -56,7 +57,7 @@ public class SpaceInvadersBoard extends AbstractBoard{
     protected void drawOtherSprites(Graphics g) {
             drawShot(g);
     }
-    
+
     protected void processOtherSprites(Player player, KeyEvent e) {
 		int x = player.getX();
 		int y = player.getY();
@@ -74,11 +75,6 @@ public class SpaceInvadersBoard extends AbstractBoard{
 			}
 		}
 	}
-
-    @Override
-    protected Player player() {
-        return null;
-    }
 
 //    private void gameOver(Graphics g) {
 //
@@ -109,7 +105,7 @@ public class SpaceInvadersBoard extends AbstractBoard{
         }
 
         // player
-        for (Player player: players) 
+        for (Player player: players)
         	player.act();
 
         // shot
@@ -200,13 +196,13 @@ public class SpaceInvadersBoard extends AbstractBoard{
         }
 
         // bombs
-        
+
         updateOtherSprites();
     }
 
-	
 
-    
+
+
     protected void updateOtherSprites() {
 		Random generator = new Random();
 
@@ -258,6 +254,9 @@ public class SpaceInvadersBoard extends AbstractBoard{
         g.fillRect(0, 0, d.width, d.height);
         g.setColor(Color.green);
     }
-
+    @Override
+    protected PlayerOnlyX player() {
+        return new PlayerOnlyX();
+    }
 }
 

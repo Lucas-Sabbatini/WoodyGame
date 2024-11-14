@@ -18,14 +18,21 @@ public class Sprite {
     protected int dx;
     protected int dy;
 
-    public boolean isFreezing() { return freezing; }
-    public void setFreezing(boolean freezing) { this.freezing = freezing; }
+    public int getDx() {
+        return dx;
+    }
 
-    public void setDx(int dx) { this.dx = dx; }
-    public void setDy(int dy) { this.dy = dy; }
-    public int getDx() { return dx; }
-    public int getDy() { return dy; }
+    public void setDx(int dx) {
+        this.dx = dx;
+    }
 
+    public int getDy() {
+        return dy;
+    }
+
+    public void setDy(int dy) {
+        this.dy = dy;
+    }
 
     public Sprite() {
 
@@ -86,11 +93,10 @@ public class Sprite {
 
         return imageHeight;
     }
-    
+
     public Rectangle getRect() {
 
-        return new Rectangle(x, y,
-                image.getWidth(null), image.getHeight(null));
+        return new Rectangle(x, y, image.getWidth(null), image.getHeight(null));
     }
 
     public void getImageDimensions() {
@@ -98,6 +104,7 @@ public class Sprite {
         imageWidth = image.getWidth(null);
         imageHeight = image.getHeight(null);
     }
+
     public void setDying(boolean dying) {
 
         this.dying = dying;
@@ -107,14 +114,17 @@ public class Sprite {
 
         return this.dying;
     }
-    
+
     public void moveX(int direction) {
 
         this.x += direction;
     }
-    
-    public void moveY(int direction) {
 
-        this.y += direction;
+    public boolean isFreezing() {
+        return freezing;
+    }
+
+    public void setFreezing(boolean freezing) {
+        this.freezing = freezing;
     }
 }

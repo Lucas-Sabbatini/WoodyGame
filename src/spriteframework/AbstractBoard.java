@@ -167,9 +167,6 @@ public abstract class AbstractBoard extends JPanel {
 
         g.setRenderingHint(RenderingHints.KEY_RENDERING,
                 RenderingHints.VALUE_RENDER_QUALITY);
-        g.setColor(new Color(87, 161, 112));
-        g.fillRect(0, 0, d.width, d.height);
-        g.setColor(new Color(87, 161, 112));
 
         if (inGame) {
 
