@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a26eca-5960-4caa-88a6-1b7511f1cb69" name="Changes" comment="Colors fixed">
+    <list default="true" id="f3a26eca-5960-4caa-88a6-1b7511f1cb69" name="Changes" comment="FIX">
       <change afterPath="$PROJECT_DIR$/WoodyGame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spriteframework/sprite/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spriteframework/sprite/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spaceinvaders/SpaceInvadersBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceinvaders/SpaceInvadersBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spriteframework/sprite/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spriteframework/sprite/Sprite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,25 +30,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GMA-gustavo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GMA-gustavo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Lucas-Sabbatini/WoodyGame.git",
-    "accountId": "93594fc6-2f79-4b05-8627-9ab2d7d77622"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Lucas-Sabbatini/WoodyGame.git&quot;,
+    &quot;accountId&quot;: &quot;93594fc6-2f79-4b05-8627-9ab2d7d77622&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2ooyDM1JcbG4dHOjikDORe0yPrC" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,26 +57,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.FreezeMonsterGame.executor": "Run",
-    "Application.SpaceInvadersGame.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrador/Downloads/trabalho-final-poo2/trabalho-final-poo2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.FreezeMonsterGame.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SpaceInvadersGame.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrador/Downloads/trabalho-final-poo2/trabalho-final-poo2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.SpaceInvadersGame">
+}</component>
+  <component name="RunManager" selected="Application.FreezeMonsterGame">
     <configuration name="FreezeMonsterGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WoodyGame.FreezeMonsterGame" />
       <module name="WoodyGame" />
@@ -103,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SpaceInvadersGame" />
         <item itemvalue="Application.FreezeMonsterGame" />
+        <item itemvalue="Application.SpaceInvadersGame" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +126,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731550103432</updated>
-      <workItem from="1731550104799" duration="14588000" />
+      <workItem from="1731550104799" duration="14864000" />
+      <workItem from="1731588318369" duration="2019000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <option name="closed" value="true" />
@@ -150,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731564337918</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="FIX">
+      <option name="closed" value="true" />
+      <created>1731564970920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731564970920</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +171,8 @@
     <MESSAGE value="Add gitignore" />
     <MESSAGE value="Game woody" />
     <MESSAGE value="Colors fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Colors fixed" />
+    <MESSAGE value="FIX" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

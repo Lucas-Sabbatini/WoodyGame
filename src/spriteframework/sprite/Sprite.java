@@ -94,17 +94,6 @@ public class Sprite {
         return imageHeight;
     }
 
-    public Rectangle getRect() {
-
-        return new Rectangle(x, y, image.getWidth(null), image.getHeight(null));
-    }
-
-    public void getImageDimensions() {
-
-        imageWidth = image.getWidth(null);
-        imageHeight = image.getHeight(null);
-    }
-
     public void setDying(boolean dying) {
 
         this.dying = dying;

@@ -17,11 +17,9 @@ import spaceinvaders.sprite.*;
 import spriteframework.sprite.PlayerOnlyX;
 
 public class SpaceInvadersBoard extends AbstractBoard{
-    //define sprites
-    //private List<BadSprite> aliens;
+
     private Shot shot;
 
-    // define global control vars
     private int direction = -1;
     private int deaths = 0;
 
@@ -53,7 +51,6 @@ public class SpaceInvadersBoard extends AbstractBoard{
         }
     }
 
-    // Override
     protected void drawOtherSprites(Graphics g) {
             drawShot(g);
     }
@@ -76,25 +73,6 @@ public class SpaceInvadersBoard extends AbstractBoard{
 		}
 	}
 
-//    private void gameOver(Graphics g) {
-//
-//        g.setColor(Color.black);
-//        g.fillRect(0, 0, Commons.BOARD_WIDTH, Commons.BOARD_HEIGHT);
-//
-//        g.setColor(new Color(0, 32, 48));
-//        g.fillRect(50, Commons.BOARD_WIDTH / 2 - 30, Commons.BOARD_WIDTH - 100, 50);
-//        g.setColor(Color.white);
-//        g.drawRect(50, Commons.BOARD_WIDTH / 2 - 30, Commons.BOARD_WIDTH - 100, 50);
-//
-//        Font small = new Font("Helvetica", Font.BOLD, 14);
-//        FontMetrics fontMetrics = this.getFontMetrics(small);
-//
-//        g.setColor(Color.white);
-//        g.setFont(small);
-//        g.drawString(message, (Commons.BOARD_WIDTH - fontMetrics.stringWidth(message)) / 2,
-//                Commons.BOARD_WIDTH / 2);
-//    }
-
     protected void update() {
 
         if (deaths == Commons.NUMBER_OF_ALIENS_TO_DESTROY) {
@@ -104,11 +82,9 @@ public class SpaceInvadersBoard extends AbstractBoard{
             message = "Game won!";
         }
 
-        // player
         for (Player player: players)
         	player.act();
 
-        // shot
         if (shot.isVisible()) {
 
             int shotX = shot.getX();
@@ -144,7 +120,6 @@ public class SpaceInvadersBoard extends AbstractBoard{
             }
         }
 
-        // aliens
 
         for (BadSprite alien : badSprites) {
 
@@ -195,7 +170,7 @@ public class SpaceInvadersBoard extends AbstractBoard{
             }
         }
 
-        // bombs
+
 
         updateOtherSprites();
     }
