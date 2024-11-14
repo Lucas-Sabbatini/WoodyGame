@@ -8,12 +8,24 @@ public class Sprite {
     private boolean visible;
     protected Image image;
     private boolean dying;
+    private boolean freezing;
+    public int lastDirection = 1;
 
     protected int x;
     protected int y;
     protected int imageWidth;
     protected int imageHeight;
     protected int dx;
+    protected int dy;
+
+    public boolean isFreezing() { return freezing; }
+    public void setFreezing(boolean freezing) { this.freezing = freezing; }
+
+    public void setDx(int dx) { this.dx = dx; }
+    public void setDy(int dy) { this.dy = dy; }
+    public int getDx() { return dx; }
+    public int getDy() { return dy; }
+
 
     public Sprite() {
 
@@ -30,7 +42,7 @@ public class Sprite {
         return visible;
     }
 
-    protected void setVisible(boolean visible) {
+    public void setVisible(boolean visible) {
 
         this.visible = visible;
     }

@@ -49,21 +49,33 @@ public abstract class AbstractBoard extends JPanel {
     //  void initBoard()
     // 
     // HotSpots
+    protected abstract void setBoardColor(Graphics g);
     protected abstract void createBadSprites();
     protected abstract void createOtherSprites();
     protected abstract void drawOtherSprites(Graphics g);
     protected abstract void update();
     protected abstract void processOtherSprites(Player player, KeyEvent e);
+    protected abstract Player player();
 
     public AbstractBoard() {
-
         initBoard();
+        d = new Dimension(Commons.BOARD_WIDTH, Commons.BOARD_HEIGHT);
         createPlayers();
-		        numberPlayers = 1;
-		        badSprites = new LinkedList<BadSprite>();
-		        createBadSprites();
-		        createOtherSprites();
-		//        shot = new Shot();
+        numberPlayers = 1;
+        badSprites = new LinkedList<BadSprite>();
+        createBadSprites();
+        createOtherSprites();
+        //        shot = new Shot();
+    }
+
+    public AbstractBoard(int boardWidth, int boardHeight) {
+        initBoard();
+        d = new Dimension(boardWidth, boardHeight);
+        createPlayers();
+        numberPlayers = 1;
+        badSprites = new LinkedList<BadSprite>();
+        createBadSprites();
+        createOtherSprites();
     }
 
     private void initBoard() {
@@ -91,7 +103,7 @@ public abstract class AbstractBoard extends JPanel {
 	}
 	
 	protected Player createPlayer() {
-		return new Player();
+		return player();
 	}
 
    public Player getPlayer(int i) {
@@ -144,6 +156,7 @@ public abstract class AbstractBoard extends JPanel {
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+        setBoardColor(g);
         doDrawing(g);
     }
 
@@ -154,9 +167,9 @@ public abstract class AbstractBoard extends JPanel {
 
         g.setRenderingHint(RenderingHints.KEY_RENDERING,
                 RenderingHints.VALUE_RENDER_QUALITY);
-        g.setColor(Color.black);
+        g.setColor(new Color(87, 161, 112));
         g.fillRect(0, 0, d.width, d.height);
-        g.setColor(Color.green);
+        g.setColor(new Color(87, 161, 112));
 
         if (inGame) {
 
@@ -179,23 +192,18 @@ public abstract class AbstractBoard extends JPanel {
         Toolkit.getDefaultToolkit().sync();
     }
 
-    private void gameOver(Graphics g) {
+    protected void gameOver(Graphics g) {
 
         g.setColor(Color.black);
-        g.fillRect(0, 0, Commons.BOARD_WIDTH, Commons.BOARD_HEIGHT);
-
+        g.fillRect(0, 0, (int) d.getWidth(), (int) d.getHeight());
         g.setColor(new Color(0, 32, 48));
-        g.fillRect(50, Commons.BOARD_WIDTH / 2 - 30, Commons.BOARD_WIDTH - 100, 50);
-        g.setColor(Color.white);
-        g.drawRect(50, Commons.BOARD_WIDTH / 2 - 30, Commons.BOARD_WIDTH - 100, 50);
-
+        g.fillRect((int) d.getWidth()/16, (int) d.getHeight()/4, (int) d.getWidth() - ((int) d.getWidth()/6) , (int) d.getHeight() - (int) d.getHeight()/2);
         Font small = new Font("Helvetica", Font.BOLD, 14);
         FontMetrics fontMetrics = this.getFontMetrics(small);
-
         g.setColor(Color.white);
         g.setFont(small);
-        g.drawString(message, (Commons.BOARD_WIDTH - fontMetrics.stringWidth(message)) / 2,
-                Commons.BOARD_WIDTH / 2);
+        g.drawString(message, ((int) d.getWidth() - fontMetrics.stringWidth(message)) / 2,
+                (int) d.getHeight() / 2);
     }
 
 

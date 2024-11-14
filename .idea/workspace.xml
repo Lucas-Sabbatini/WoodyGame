@@ -1,42 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="69952187-a142-4574-aca5-22616a082a94" name="Changes" comment="" />
+    <list default="true" id="f3a26eca-5960-4caa-88a6-1b7511f1cb69" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WoodyGame.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WoodyGame/Commons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WoodyGame/FreezeMonsterBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WoodyGame/FreezeMonsterGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WoodyGame/sprite/Freeze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WoodyGame/sprite/Gosma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WoodyGame/sprite/Monstro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WoodyGame/sprite/Woody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spriteframework/sprite/PlayerOnlyX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spaceinvaders/SpaceInvadersBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceinvaders/SpaceInvadersBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spriteframework/AbstractBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spriteframework/AbstractBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spriteframework/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spriteframework/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spriteframework/sprite/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spriteframework/sprite/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spriteframework/sprite/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spriteframework/sprite/Sprite.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "GMA-gustavo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Lucas-Sabbatini/WoodyGame.git",
+    "accountId": "93594fc6-2f79-4b05-8627-9ab2d7d77622"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="2ooLaDlpBzaqOtNp1EXwoqAdYSw" />
+  <component name="ProjectId" id="2ooyDM1JcbG4dHOjikDORe0yPrC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "Application.FreezeMonsterGame.executor": "Run",
+    "Application.SpaceInvadersGame.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/lucas/OneDrive/Área de Trabalho/Código para Trabalho Final/Arcade-Sprite-Based-Space-Invaders/Arcade-Sprite-Based-Space-Invaders",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Administrador/Downloads/trabalho-final-poo2/trabalho-final-poo2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="69952187-a142-4574-aca5-22616a082a94" name="Changes" comment="" />
-      <created>1731531043482</created>
+      <changelist id="f3a26eca-5960-4caa-88a6-1b7511f1cb69" name="Changes" comment="" />
+      <created>1731550103432</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1731531043482</updated>
-      <workItem from="1731531044574" duration="30000" />
+      <updated>1731550103432</updated>
+      <workItem from="1731550104799" duration="12317000" />
     </task>
+    <task id="LOCAL-00001" summary="Add gitignore">
+      <option name="closed" value="true" />
+      <created>1731550364663</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731550364663</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gitignore" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

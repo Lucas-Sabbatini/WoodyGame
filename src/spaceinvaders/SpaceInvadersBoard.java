@@ -1,7 +1,7 @@
 package spaceinvaders;
 
 
-import java.awt.Graphics;
+import java.awt.*;
 
 import java.awt.event.KeyEvent;
 import java.util.Iterator;
@@ -74,6 +74,11 @@ public class SpaceInvadersBoard extends AbstractBoard{
 			}
 		}
 	}
+
+    @Override
+    protected Player player() {
+        return null;
+    }
 
 //    private void gameOver(Graphics g) {
 //
@@ -246,6 +251,13 @@ public class SpaceInvadersBoard extends AbstractBoard{
                 }
             }
         }
-	}    
+	}
+    @Override
+    protected void setBoardColor(Graphics g) {
+        g.setColor(Color.black);
+        g.fillRect(0, 0, d.width, d.height);
+        g.setColor(Color.green);
+    }
+
 }
 

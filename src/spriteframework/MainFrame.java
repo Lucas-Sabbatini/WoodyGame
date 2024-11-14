@@ -20,13 +20,15 @@ public abstract class MainFrame extends JFrame  {
 		setVisible(true);
     }
 
+	public MainFrame(String t, int boardWidth, int boardHeight) {
 
-//    public static void main(String[] args) {
-//
-//        EventQueue.invokeLater(() -> {
-//
-//            MainFrameExtended ex = new MainFrameExtended();
-//        });
-//    }
+		add(createBoard());
+		setTitle(t);
+		setSize(boardWidth, boardHeight);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setResizable(false);
+		setLocationRelativeTo(null);
+		setVisible(true);
+	}
     
 }
