@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a26eca-5960-4caa-88a6-1b7511f1cb69" name="Changes" comment="Game woody">
+    <list default="true" id="f3a26eca-5960-4caa-88a6-1b7511f1cb69" name="Changes" comment="Colors fixed">
       <change afterPath="$PROJECT_DIR$/WoodyGame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceinvaders/SpaceInvadersBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceinvaders/SpaceInvadersBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spriteframework/AbstractBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spriteframework/AbstractBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spriteframework/sprite/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spriteframework/sprite/Sprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spriteframework/sprite/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spriteframework/sprite/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +74,40 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.SpaceInvadersGame">
+    <configuration name="FreezeMonsterGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WoodyGame.FreezeMonsterGame" />
+      <module name="WoodyGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WoodyGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpaceInvadersGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spaceinvaders.SpaceInvadersGame" />
+      <module name="WoodyGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spaceinvaders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpaceInvadersGame" />
+        <item itemvalue="Application.FreezeMonsterGame" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -93,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731550103432</updated>
-      <workItem from="1731550104799" duration="14039000" />
+      <workItem from="1731550104799" duration="14588000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <option name="closed" value="true" />
@@ -111,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731562578672</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Colors fixed">
+      <option name="closed" value="true" />
+      <created>1731564337918</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731564337918</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +159,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add gitignore" />
     <MESSAGE value="Game woody" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game woody" />
+    <MESSAGE value="Colors fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Colors fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

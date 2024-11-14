@@ -13,19 +13,13 @@ public class Player extends Sprite {
 
     public Player() {
         loadImage();
-		getImageDimensions();
-		resetState();
+        resetState();
     }
 
-    protected void loadImage() {
-        String imagePath = "/images/player.png"; // Update this path as needed
-        java.net.URL imgURL = getClass().getResource(imagePath);
-        if (imgURL != null) {
-            ImageIcon ii = new ImageIcon(imgURL);
-            setImage(ii.getImage());
-        } else {
-            System.err.println("Couldn't find file: " + imagePath);
-        }
+    protected void loadImage () {
+        ImageIcon ii = new ImageIcon("images/player.png");
+        width = ii.getImage().getWidth(null);
+        setImage(ii.getImage());
     }
     
     public void act() {
@@ -56,22 +50,24 @@ public class Player extends Sprite {
 
         int key = e.getKeyCode();
 
-        if (key == KeyEvent.VK_LEFT) {
-
-            dx = -2;
-        }
-
-        if (key == KeyEvent.VK_RIGHT) {
-
-            dx = 2;
-        }
-
         if (key == KeyEvent.VK_UP) {
+            super.lastDirection = 2;
             dy = -2;
         }
 
         if (key == KeyEvent.VK_DOWN) {
+            super.lastDirection = 4;
             dy = 2;
+        }
+
+        if (key == KeyEvent.VK_LEFT) {
+            super.lastDirection = 1;
+            dx = -2;
+        }
+
+        if (key == KeyEvent.VK_RIGHT) {
+            super.lastDirection = 3;
+            dx = 2;
         }
     }
 
